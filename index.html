@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>
+
+Crorepati Quiz
+
+</title>
+
+<link rel="stylesheet"
+href="./css/style.css">
+
+</head>
+
+<body>
+
+<section class="welcome active">
+
+<div class="card">
+
+<h1>
+
+CROREPATI QUIZ
+
+</h1>
+
+<input
+
+id="username"
+
+placeholder=
+"Username"
+
+>
+
+<select id="avatar">
+
+<option value="👑">
+
+👑 King
+
+</option>
+
+<option value="🎯">
+
+🎯 Pro
+
+</option>
+
+<option value="🚀">
+
+🚀 Master
+
+</option>
+
+<option value="🔥">
+
+🔥 Legend
+
+</option>
+
+</select>
+
+<br><br>
+
+<button id="start">
+
+Start Game
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<section class="game">
+
+<div class="left">
+
+<div class="top">
+
+<div id="profile">
+
+<span id="userAvatar">
+
+👑
+
+</span>
+
+<span id="userName">
+
+Player
+
+</span>
+
+</div>
+
+Timer:
+
+<span id="timer">
+
+30
+
+</span>
+
+<button id="fifty">
+50:50
+</button>
+
+<button id="flip">
+Flip
+</button>
+
+<button id="aud">
+Audience
+</button>
+
+</div>
+
+<div class="question">
+
+<h2 id="q">
+
+</h2>
+
+<div class="options">
+
+<button class="option"></button>
+
+<button class="option"></button>
+
+<button class="option"></button>
+
+<button class="option"></button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<ul id="tree">
+
+</ul>
+
+</div>
+
+</section>
+
+
+
+<div
+id="result"
+
+class="modal hidden">
+
+<div class="card">
+
+<h1 id="title">
+
+</h1>
+
+<h2 id="money">
+
+</h2>
+
+<h3>
+
+Leaderboard
+
+</h3>
+
+<div id="board">
+
+</div>
+
+<button
+onclick=
+location.reload()
+
+>
+
+Restart
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<script src=
+"./js/questions.js"></script>
+
+<script src=
+"./js/audio.js"></script>
+
+<script src=
+"./js/leaderboard.js"></script>
+
+<script src=
+"./js/timer.js"></script>
+
+<script src=
+"./js/lifelines.js"></script>
+
+<script src=
+"./js/app.js"></script>
+
+</body>
+
+</html>
